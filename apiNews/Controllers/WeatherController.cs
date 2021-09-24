@@ -13,22 +13,22 @@ namespace apiNews.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class NewsController : ControllerBase
+    public class WeatherController : ControllerBase
     {
         private readonly AppDbContext context;
 
-        public NewsController(AppDbContext context)
+        public WeatherController(AppDbContext context)
         {
             this.context = context;
         }
 
-        // GET: api/<NewsController>
+        // GET: api/<WeatherController>
         [HttpGet]
         public ActionResult Get()
         {
             try
             {
-                return Ok(context.news.ToList());
+                return Ok(context.weather.ToList());
             }
             catch (Exception ex)
             {
@@ -37,15 +37,15 @@ namespace apiNews.Controllers
             }
         }
 
-        // GET api/<NewsController>/5
-        [HttpGet("{city}", Name ="GetNoticia")]
+        // GET api/<WeatherController>/5
+        [HttpGet("{city}", Name = "GetWeather")]
         public ActionResult Get(string city)
         {
             try
             {
                 //var noticia = context.news.FirstOrDefault(n => n.id == id);
-                var noticia = context.news.Where(n => n.city == city);
-                return Ok(noticia);
+                var clima = context.weather.Where(n => n.city == city);
+                return Ok(clima);
             }
             catch (Exception ex)
             {
@@ -53,15 +53,15 @@ namespace apiNews.Controllers
             }
         }
 
-              // POST api/<NewsController>
+        // POST api/<WeatherController>
         [HttpPost]
-        public ActionResult Post([FromBody] NewsBd noticia)
+        public ActionResult Post([FromBody] WeatherBd clima)
         {
             try
             {
-                context.news.Add(noticia);
+                context.weather.Add(clima);
                 context.SaveChanges();
-                return CreatedAtRoute("GetNoticia", new { id = noticia.id }, noticia);
+                return CreatedAtRoute("GetWeather", new { id = clima.id }, clima);
 
             }
             catch (Exception ex)
@@ -70,21 +70,22 @@ namespace apiNews.Controllers
             }
         }
 
-        // PUT api/<NewsController>/5
+        // PUT api/<WeatherController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] NewsBd noticia)
+        public ActionResult Put(int id, [FromBody] WeatherBd clima)
         {
             try
             {
-                if (noticia.id == id)
+                if (clima.id == id)
                 {
-                    context.Entry(noticia).State = EntityState.Modified;
+                    context.Entry(clima).State = EntityState.Modified;
                     context.SaveChanges();
-                    return CreatedAtRoute("GetNoticia", new { id = noticia.id }, noticia);
+                    return CreatedAtRoute("GetWeather", new { id =  clima.id }, clima);
                 }
-                else {
+                else
+                {
                     return BadRequest();
-                }             
+                }
 
             }
             catch (Exception ex)
@@ -93,16 +94,16 @@ namespace apiNews.Controllers
             }
         }
 
-        // DELETE api/<NewsController>/5
+        // DELETE api/<WeatherController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
             try
             {
-                var noticia = context.news.FirstOrDefault(n => n.id == id);
-                if (noticia!= null)
+                var clima = context.weather.FirstOrDefault(n => n.id == id);
+                if (clima != null)
                 {
-                    context.news.Remove(noticia);
+                    context.weather.Remove(clima);
                     context.SaveChanges();
                     return Ok(id);
                 }

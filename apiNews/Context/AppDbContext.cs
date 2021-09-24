@@ -14,5 +14,6 @@ namespace apiNews.Context
 
         }
         public DbSet<NewsBd> news { get; set; }
+        public DbSet<WeatherBd> weather { get; set; }
     }
 }

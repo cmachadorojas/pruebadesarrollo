@@ -27,7 +27,6 @@ D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Identi
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
@@ -53,3 +52,10 @@ D:\Proyectos\PruebaNews\apiNews\apiNews\obj\Debug\netcoreapp3.1\apiNews.csproj.C
 D:\Proyectos\PruebaNews\apiNews\apiNews\obj\Debug\netcoreapp3.1\apiNews.dll
 D:\Proyectos\PruebaNews\apiNews\apiNews\obj\Debug\netcoreapp3.1\apiNews.pdb
 D:\Proyectos\PruebaNews\apiNews\apiNews\obj\Debug\netcoreapp3.1\apiNews.genruntimeconfig.cache
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\libman.json
+D:\Proyectos\PruebaNews\apiNews\apiNews\obj\Debug\netcoreapp3.1\apiNews.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Proyectos\PruebaNews\apiNews\apiNews\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
